@@ -3,7 +3,7 @@
 /*  Mercury - 3.9.10.2  */
 
 global $mercury_version;
-$mercury_version = '3.9.10.2';
+$mercury_version = '3.9.11';
 
 add_theme_support( 'title-tag' );
 add_theme_support( 'automatic-feed-links' );
@@ -1283,6 +1283,7 @@ require_once( get_template_directory() . '/theme-functions/gutenberg.php' );
 require_once( get_template_directory() . '/theme-functions/custom-category-inputs.php' );
 require_once( get_template_directory() . '/theme-functions/custom-hp-inputs.php' );
 require_once( get_template_directory() . '/theme-functions/class-tgm-plugin-activation.php' );
+require_once( get_template_directory() . '/theme-functions/media-upload-rename.php' );
 require_once( get_template_directory() . '/theme-functions/index.php' );
 
 /*  Space-Themes Functions End  */
