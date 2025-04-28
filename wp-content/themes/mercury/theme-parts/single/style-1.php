@@ -99,4 +99,22 @@
 	</div>
 </div>
 
+<?php
+$bottomBar = get_post_meta(get_the_ID(), '_bottom_bar', true);
+$postTerms = wp_get_post_terms(get_the_ID(), 'category');
+$removeBottomBar = false;
+$categoryId = null;
+foreach($postTerms as $postTerm) {
+    $useSettings = get_term_meta($postTerm->term_id, 'bottom_bar', true);
+    if ($useSettings) {
+        $removeBottomBar = true;
+        $categoryId = $postTerm->term_id;
+        break;
+    }
+}
+
+if (!$bottomBar && !$removeBottomBar) {
+    get_template_part('/theme-parts/single/custom-parts/bottom-bar');
+}
+?>
 <!-- Page Section End -->

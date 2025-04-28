@@ -1284,6 +1284,9 @@ require_once( get_template_directory() . '/theme-functions/custom-category-input
 require_once( get_template_directory() . '/theme-functions/custom-hp-inputs.php' );
 require_once( get_template_directory() . '/theme-functions/class-tgm-plugin-activation.php' );
 require_once( get_template_directory() . '/theme-functions/media-upload-rename.php' );
+require_once( get_template_directory() . '/theme-functions/custom-bottom-bar/main-settings.php' );
+require_once( get_template_directory() . '/theme-functions/custom-bottom-bar/post-settings.php' );
+require_once( get_template_directory() . '/theme-functions/custom-bottom-bar/category-settings.php' );
 require_once( get_template_directory() . '/theme-functions/index.php' );
 
 /*  Space-Themes Functions End  */
